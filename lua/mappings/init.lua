@@ -4,10 +4,12 @@ local opts = { noremap = true, silent = true}
 vim.g.mapleader = ' '
 
 -- this is my keybindings
-
+-- leaders
 map('n','<leader>t', ':NvimTreeToggle<CR>',opts)
 map('n', '<leader>s', ':w<CR>', opts)
 map('n', '<leader>q', ':wq<CR>', opts)
+map('n', '<leader>v', '<C-v>', opts)
+
 map('i', 'jj', '<Esc>', opts)
 map('i', 'jk', '<Esc>:', opts)
 map('i', '(', '()<left>', opts)
