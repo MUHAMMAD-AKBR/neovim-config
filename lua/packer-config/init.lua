@@ -12,8 +12,9 @@ return require'packer'.startup(function()
     use 'williamboman/nvim-lsp-installer' -- the installer
     use 'nvim-lualine/lualine.nvim' -- the statusline
     use {'nvim-treesitter/nvim-treesitter',  run = ':TSUpdate' } -- language parser
-    use 'rcarriga/nvim-notify'
-   	use { 'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}} 
+    use 'rcarriga/nvim-notify' -- notification
+   	use { 'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}} -- header 
+   	use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} }} -- telescope 
 end)
 
 
