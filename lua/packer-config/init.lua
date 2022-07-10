@@ -15,6 +15,7 @@ return require'packer'.startup(function()
     use 'rcarriga/nvim-notify' -- notification
    	use { 'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}} -- header 
    	use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} }} -- telescope 
+  	use {'tanvirtin/vgit.nvim', requires = { 'nvim-lua/plenary.nvim' } } -- git plugin like vscode where you can have colored modified lines of code...
 end)
 
 
