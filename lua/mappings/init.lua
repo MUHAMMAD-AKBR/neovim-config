@@ -10,6 +10,7 @@ map('n', '<leader>s', ':w<CR>', opts)
 map('n', '<leader>q', ':wq<CR>', opts)
 map('n', '<leader>v', '<C-v>', opts)
 
+
 map('i', 'jj', '<Esc>', opts)
 map('i', 'jk', '<Esc>:', opts)
 map('i', '(', '()<left>', opts)
@@ -19,6 +20,15 @@ map('i', "'", "''<left>", opts)
 map('i', '"', '""<left>', opts)
 map('i', '`', '``<left>',opts)
 map('n', 'sh', '<Esc>:!', opts )
+map('n', '<leader>ff', ':Telescope<CR>', opts)
+
+ -- telescope keybindings
+ --nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+ --nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+ --nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+ --nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+
 
  -- vim.cmd('inoremap jj <Esc>')
  -- vim.cmd('inoremap jk <Esc>:')

@@ -1,5 +1,5 @@
 local set = vim.opt
-vim.cmd("colorscheme duskfox")
+vim.cmd("colorscheme nightfox")
 -- notification
 vim.notify = require("notify")
 
